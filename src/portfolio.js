@@ -3,6 +3,7 @@
 // Your Summary And Greeting Section
 
 import emoji from 'react-easy-emoji';
+const crypto = require('crypto');
 
 const greeting = {
   /* Your Summary And Greeting Section */
@@ -154,7 +155,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
+  githubConvertedToken: decrypt(process.env.REACT_APP_GITHUB_TOKEN),
   githubUserName: 'ahShimul', // Change to your github username to view your profile in Contact Section.
   showGithubProfile: 'true', // Set true or false to show Contact profile using Github, defaults to false
 };
@@ -206,13 +207,18 @@ const blogSection = {
       title:
         'Lambda@Edge, a different way to configure SPA client side routing (like ReactJS, Angular JS or Vue JS) with S3 and CloudFront',
       description:
-        'Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?',
+        'Do you want to configure SPA routing hosted in Amazon AWS S3 with 200 response code? Read this...',
     },
   ],
 };
 
 // Talks Sections
-
+function decrypt(text) {
+  var decipher = crypto.createDecipher('aes-256-cbc', 'd6F3Efeq');
+  var dec = decipher.update(text, 'hex', 'utf8');
+  dec += decipher.final('utf8');
+  return dec;
+}
 const talkSection = {
   title: 'TALKS',
   subtitle: emoji(

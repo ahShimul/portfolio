@@ -40,6 +40,7 @@ export default function Profile() {
       `,
       })
       .then((result) => {
+  
         setProfileFunction(result.data.user);
       })
       .catch(function (error) {
