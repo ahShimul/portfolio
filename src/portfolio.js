@@ -203,6 +203,13 @@ const blogSection = {
   blogs: [
     {
       url:
+        'https://medium.com/@hasnat_33856/use-of-cron-lambdas-in-your-serverless-app-283b74a41a53',
+      title: 'Use of CRON lambdas in your serverless app',
+      description:
+        'Do you want to use CRON jobs in your serverless project? Read this and learn how I used it...',
+    },
+    {
+      url:
         'https://medium.com/craftsmenltd/lambda-edge-a-different-way-to-configure-spa-client-side-routing-like-reactjs-angular-js-or-vue-d2425924b7be',
       title:
         'Lambda@Edge, a different way to configure SPA client side routing (like ReactJS, Angular JS or Vue JS) with S3 and CloudFront',
