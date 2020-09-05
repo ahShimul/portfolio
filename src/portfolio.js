@@ -203,8 +203,16 @@ const blogSection = {
   blogs: [
     {
       url:
-        'https://medium.com/@hasnat_33856/use-of-cron-lambdas-in-your-serverless-app-283b74a41a53',
-      title: 'Use of CRON lambdas in your serverless app',
+        'https://medium.com/@hasnat_33856/customize-your-cognito-verification-emails-with-html-pages-using-lambda-function-e6fff7ebfb94?source=friends_link&sk=f09194f72373cb0695ab523d408de9cf',
+      title:
+        'Customize your Cognito verification emails with html pages using lambda function',
+      description:
+        'Do you want to customize cognito verification emails using lambda? Read this and learn how I used it...',
+    },
+    {
+      url:
+        'https://medium.com/craftsmenltd/demystifying-cron-job-through-aws-lambda-in-serverless-cde697730265',
+      title: 'Demystifying cron job through AWS lambda in Serverless',
       description:
         'Do you want to use CRON jobs in your serverless project? Read this and learn how I used it...',
     },
